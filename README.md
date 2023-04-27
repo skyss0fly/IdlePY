@@ -12,6 +12,7 @@ Multiplay support (not through internet)
 Run the python program (main.py) with IDLe or through an online python compiler. its as simple as that.
 
 # An Example on how to play/what it looks like
+```
 What is your name:
 Fred
 Fred goes exploring and finds fun and joy, but you seem to have run into a zombie
@@ -25,4 +26,4 @@ explore
 fred is going exploring, your health is 15, but whats this, you have ran into a Dragon, what do you do?
 Fight
 You fought with the dragon and have lost 5 health, your health is now 10
-
+```
