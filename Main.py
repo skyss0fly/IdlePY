@@ -11,6 +11,13 @@ class Player(LivingCreature):
       self.health = 15
       self.stamina = 100
       self.monster = monster
+    
+    def Cash(self):
+      self.cash = 0
+    
+    def Inventory(self):
+      print('inventory')
+      self.items = 0
       
     def help(self):
         print('Here are your list of commands:')
@@ -19,6 +26,11 @@ class Player(LivingCreature):
     def explore(self):
         print(self.name, 'Has gone Exploring! you will soon be faced with', self.monster.name)
         print('Stamina: ', self.stamina, ' Health: ', self.health)
+        print('you have earned 1 Cash for Exploring ')
+        cash.value + 1
+        print('Current Cash: ', self.cash)
+        
+      
         
     def run(self):
         print('you Have ran from ', self.monster.name, 'and as a result, your stamina has decreased by 10')
@@ -26,7 +38,7 @@ class Player(LivingCreature):
         print('stamina: ', self.stamina)
         
     def fight(self):
-        print('You have fought', self.monster.name)
+        print('You have fought', self.monster.name, ' and gained 5 cash')               cash.value = cash.value + 5
         self.health -= random.randint(0,5)
         print('Your Health Currently: ', self.health)
   
