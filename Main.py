@@ -1,3 +1,4 @@
+While True:
 class LivingCreature():
   def __init__(self):
     self.name = 'Name'
@@ -24,6 +25,24 @@ class Player(LivingCreature):
     print('you Have ran from ', monster.name, 'and as a result, your stamina has decreased by 10')
     stamina.amount = stamina.amount - 10
     print('stamina: ', stamina.amount)
+  def __init__(fight):
+    print('You have fought', monster.name)
+    self.health = randint(0,5)
+    print('Your Health Currently: ', self.health)
+  
+  if self.health == 0:
+    print('Game Over, give it a retry? Yes or No?')
+    while True:
+        answer = str(input('Run again? (y/n): '))
+        if answer in ('y', 'n'):
+            break
+        print("invalid input.")
+    if answer == 'y':
+        continue
+    else:
+        print("Goodbye")
+        break
+        
 class Monster(LivingThing):
     def __init__ (self,monster):
         self.health = 15
