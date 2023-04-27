@@ -1,4 +1,5 @@
 While True:
+import Random
 class LivingCreature():
   def __init__(self):
     self.name = 'Name'
@@ -48,12 +49,18 @@ class Monster(LivingThing):
         self.health = 15
         self.name = name
         self.Damage = Damage
+Goblin=Monster('Goblin',20)
+Zombie=Monster('Zombie',15)
 
+Monster=[]
+
+Monsters= random choice(Monster)
 Commands = {
  'help', Player.help,
  'explore', Player.explore,
  'run', Player.run,
  'fight', Player.fight,
     }
+
 
    
