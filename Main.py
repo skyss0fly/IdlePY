@@ -13,7 +13,7 @@ class Player(LivingCreature):
       self.monster = monster
       self.cash = 0
     def cash(self):
-      print(cash.value)
+      print(self.cash)
     
     def inventory(self):
       print('inventory')
@@ -40,7 +40,8 @@ class Player(LivingCreature):
         print('stamina: ', self.stamina)
         
     def fight(self):
-        print('You have fought', self.monster.name, ' and gained 5 cash')               cash.value = cash.value + 5
+        print('You have fought', self.monster.name, ' and gained 5 cash')
+        cash.value = cash.value + 5
         self.health -= random.randint(0,5)
         print('Your Health Currently: ', self.health)
   
