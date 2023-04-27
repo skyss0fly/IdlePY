@@ -23,7 +23,7 @@ class Player(LivingCreature):
       print('Shop Items:')
     def help(self):
         print('Here are your list of commands:')
-        print('1. Help. 2.Explore. 3.run. 4.Fight')
+        print('1. Help. 2.Explore. 3.run. 4.Fight. 5. Cash')
         
     def explore(self):
         print(self.name, 'Has gone Exploring! you will soon be faced with', self.monster.name)
