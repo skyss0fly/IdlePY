@@ -2,37 +2,37 @@
 import Random
 class LivingCreature():
   def __init__(self):
-    self.name = 'Name'
+      self.name = 'Name'
   def __init__(health):
-   self.health = 1
+     self.health = 1
   def __init__(tire):
-    self.health = self.health - 1
+      self.health = self.health - 1
   def __init__(hurt):
-    self.health = self.health - 1
+      self.health = self.health - 1
 
 class Player(LivingCreature):
     def __init__(self,monster):
-    self.health = 15
-    self.name = input('what is your name?')
-    self.stamina = 100
-    hero.name = name
+      self.health = 15
+      self.name = input('what is your name?')
+      self.stamina = 100
+      hero.name = name
     def __init__(help):
-      print('Here are your list of commands:')
-      print('1. Help. 2.Explore. 3.run. 4.Fight')
+        print('Here are your list of commands:')
+        print('1. Help. 2.Explore. 3.run. 4.Fight')
    def __init__(explore):
-    print(hero.name, 'Has gone Exploring! you will soon be faced with', monster.name)
-    print('Stamina: ', stamina.amount, ' Health: ', health.amount)
+      print(hero.name, 'Has gone Exploring! you will soon be faced with', monster.name)
+      print('Stamina: ', stamina.amount, ' Health: ', health.amount)
    def __init__(run):
-    print('you Have ran from ', monster.name, 'and as a result, your stamina has decreased by 10')
-    stamina.amount = stamina.amount - 10
-    print('stamina: ', stamina.amount)
+      print('you Have ran from ', monster.name, 'and as a result, your stamina has decreased by 10')
+      stamina.amount = stamina.amount - 10
+      print('stamina: ', stamina.amount)
   def __init__(fight):
-    print('You have fought', monster.name)
-    self.health = random.randint(0,5)
-    print('Your Health Currently: ', self.health)
+      print('You have fought', monster.name)
+      self.health = random.randint(0,5)
+      print('Your Health Currently: ', self.health)
   
   if self.health == 0:
-    print('Game over!')
+      print('Game over!')
 class Monster(LivingThing):
     def __init__ (self,monster):
         self.health = 15
