@@ -11,14 +11,16 @@ class Player(LivingCreature):
       self.health = 15
       self.stamina = 100
       self.monster = monster
-    
-    def Cash(self):
       self.cash = 0
+    def cash(self):
+      print(cash.value)
     
-    def Inventory(self):
+    def inventory(self):
       print('inventory')
       self.items = 0
       
+    def shop(self):
+      print('Shop Items:')
     def help(self):
         print('Here are your list of commands:')
         print('1. Help. 2.Explore. 3.run. 4.Fight')
@@ -58,6 +60,9 @@ commands = {
  'explore': Player.explore,
  'run': Player.run,
  'fight': Player.fight,
+ 'inventory' : Player.inventory,
+ 'shop' : Player.shop,
+ 'cash' : Player.cash,
  }
 
 player_name = input('what is your name?')
