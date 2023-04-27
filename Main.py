@@ -28,7 +28,7 @@ class Player(LivingCreature):
     print('stamina: ', stamina.amount)
   def __init__(fight):
     print('You have fought', monster.name)
-    self.health = randint(0,5)
+    self.health = random.randint(0,5)
     print('Your Health Currently: ', self.health)
   
   if self.health == 0:
@@ -54,7 +54,7 @@ Zombie=Monster('Zombie',15)
 
 Monster=[]
 
-Monsters= random choice(Monster)
+Monsters= random.choice(Monster)
 Commands = {
  'help', Player.help,
  'explore', Player.explore,
