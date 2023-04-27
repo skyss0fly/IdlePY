@@ -1,4 +1,4 @@
-While True:
+
 import Random
 class LivingCreature():
   def __init__(self):
@@ -32,18 +32,7 @@ class Player(LivingCreature):
     print('Your Health Currently: ', self.health)
   
   if self.health == 0:
-    print('Game Over, give it a retry? Yes or No?')
-    while True:
-        answer = str(input('Run again? (y/n): '))
-        if answer in ('y', 'n'):
-            break
-        print("invalid input.")
-    if answer == 'y':
-        continue
-    else:
-        print("Goodbye")
-        break
-        
+    print('Game over!')
 class Monster(LivingThing):
     def __init__ (self,monster):
         self.health = 15
