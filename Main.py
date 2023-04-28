@@ -59,6 +59,21 @@ zombie = Monster('Zombie', 15)
 monsters = [goblin, zombie]
 chosen_monster = random.choice(monsters)
 
+class itemdrops(self):
+  self.TreasurersBoots = boots
+  self.SlimeGel = gel
+  self.RustyCan = can
+  self.LightningRing = ring
+  boots.levelincrement = 0.3
+  gel.levelincrement = 0
+  ring.levelincrement = 0.3
+  can.levelincrement = 0
+  
+  boots.accessory = 1
+  gel.accessory = 0
+  can.accessory = 0
+  ring.accesory = 1
+  
 commands = {
  'help': Player.help,
  'explore': Player.explore,
