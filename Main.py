@@ -27,7 +27,9 @@ class Player(LivingCreature):
         print('1. Help. 2.Explore. 3.run. 4.Fight. 5. Cash')
         
     def explore(self):
-        print(self.name, 'Has gone Exploring! you will soon be faced with', self.monster.name)
+        print(self.name, 'Has gone Exploring! But as literally every story goes, you have unfortunately bumped into ', self.monster.name)
+        self.health + 1
+        self.stamina + random.randint(0,10)
         print('Stamina: ', self.stamina, ' Health: ', self.health)
         print('you have earned 1 Cash for Exploring ')
         cash.value + 1
