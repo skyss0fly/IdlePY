@@ -12,6 +12,7 @@ class Player(LivingCreature):
       self.stamina = 100
       self.monster = monster
       self.cash = 0
+      
     def cash(self):
       print(self.cash)
     
