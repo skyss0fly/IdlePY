@@ -47,6 +47,8 @@ class Player(LivingCreature):
         cash.value = cash.value + 5
         self.health -= random.randint(0,5)
         print('Your Health Currently: ', self.health)
+        print('you picked up a ', itemdrops,name)
+        self.inventory.items += 1
   
   
 class Monster(LivingCreature):
@@ -69,11 +71,11 @@ class itemdrops(self):
   ring.levelincrement = 0.3
   can.levelincrement = 0
   
-  boots.accessory = 1
-  gel.accessory = 0
-  can.accessory = 0
-  ring.accesory = 1
+  boots=itemdrops('TreasurersBoots',0.3)
+  ring=itemdrops('Lightning Ring',0.3)
   
+  accessories=[boots,ring]
+  chosen_drop = random.choice(accessories)
 commands = {
  'help': Player.help,
  'explore': Player.explore,
