@@ -47,7 +47,7 @@ class Player(LivingCreature):
         cash.value = cash.value + 5
         self.health -= random.randint(0,5)
         print('Your Health Currently: ', self.health)
-        print('you picked up a ', itemdrops,name)
+        print('you picked up a ', itemdrops.name)
         self.inventory.items += 1
   
   
