@@ -1,3 +1,4 @@
-The Current Build is 38DB 
+The Current Build is 40DA_BETA1
 
-In 39DA there will be Economy added, Shops, items, even more monsters and Mob drops.
+In 40DB_BETA2 there will be:
+> 3d engine
