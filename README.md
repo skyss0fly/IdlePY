@@ -21,11 +21,11 @@ Fred goes exploring and finds fun and joy, but you seem to have run into a zombi
 What do you do?
 Fight, run, explore, help
 run
-fred has chosen run. you have ran and lost 10 stamina, you now have 90 stamina
+Fred has chosen run. you have ran and lost 10 stamina, you now have 90 stamina
 explore
-fred is going exploring, youe health is 15
+Fred is going exploring, youe health is 15
 explore
-fred is going exploring, your health is 15, but whats this, you have ran into a Dragon, what do you do?
+Fred is going exploring, your health is 15, but whats this, you have ran into a Dragon, what do you do?
 Fight
 You fought with the dragon and have lost 5 health, your health is now 10
 ```
