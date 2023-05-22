@@ -1,8 +1,8 @@
 class Documents():
   def __init__(self):
-      self.version = 0.1
+      self.version = 0.8.3
   def commands(self):
-    print('You can use the following commands in game: help, run, fight, explore.')
+    print('Hi, rework is im progress of the entire game!.')
       
 Commands = {
 'Commands' , Documents.commands,
