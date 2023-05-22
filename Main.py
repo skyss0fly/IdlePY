@@ -49,7 +49,51 @@ class Player(LivingCreature):
         print('Your Health Currently: ', self.health)
         print('you picked up a ', itemdrops.name)
         self.inventory.items += 1
-  
+        
+class Player2(LivingCreature):
+      def __init__(self, name, monster):
+      super().__init__(name)
+      self.health = 15
+      self.stamina = 100
+      self.monster = monster
+      self.cash = 0
+      
+    def cash(self):
+      print(self.cash)
+    
+    def inventory(self):
+      print('inventory')
+      self.items = 0
+      
+    def shop(self):
+      print('Shop Items:')
+    def help(self):
+        print('Here are your list of commands:')
+        print('1. Help. 2.Explore. 3.run. 4.Fight. 5. Cash')
+        
+    def explore(self):
+        print(self.name, 'Has gone Exploring! But as literally every story goes, you have unfortunately bumped into ', self.monster.name)
+        self.health + 1
+        self.stamina + random.randint(0,10)
+        print('Stamina: ', self.stamina, ' Health: ', self.health)
+        print('you have earned 1 Cash for Exploring ')
+        cash.value + 1
+        print('Current Cash: ', self.cash)
+        
+      
+        
+    def run(self):
+        print('you Have ran from ', self.monster.name, 'and as a result, your stamina has decreased by 10')
+        self.stamina -= 10
+        print('stamina: ', self.stamina)
+        
+    def fight(self):
+        print('You have fought', self.monster.name, ' and gained 5 cash')
+        cash.value = cash.value + 5
+        self.health -= random.randint(0,5)
+        print('Your Health Currently: ', self.health)
+        print('you picked up a ', itemdrops.name)
+        self.inventory.items += 1
   
 class Monster(LivingCreature):
     def __init__ (self, name, health):
