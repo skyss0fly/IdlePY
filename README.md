@@ -11,7 +11,7 @@ Multiplay support (not through internet)
  > there are currently 2 Builds in development: 39DA and 40DA so documentation will open regarding the builds
 
 # How To Play?
-Run the python program (main.py) with IDLe or through an online python compiler. its as simple as that.
+Run the python program (main.py) with IDLe or through an online python compiler or run `game.exe`. its as simple as that.
 
 # An Example on how to play/what it looks like
 ```
